@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 289
+  ClientWidth = 581
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MaskEdit11: TMaskEdit1
+    Left = 296
+    Top = 120
+    Width = 118
+    Height = 21
+    EditMask = '99.999.999/9999-99;1;_'
+    MaxLength = 18
+    TabOrder = 0
+    Text = '  .   .   /    -  '
+    Pessoa = pJuridica
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 24
+    Top = 40
+    Width = 129
+    Height = 57
+    Caption = 'CNPJ - CPF'
+    Columns = 2
+    Items.Strings = (
+      'Juridica'
+      'Fisica')
+    TabOrder = 1
+    OnClick = RadioGroup1Click
+  end
+end
